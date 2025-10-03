@@ -1,0 +1,10 @@
+{
+  "sharepoint": {
+    "site_url": "https://lajoyaminingsac.sharepoint.com/sites/BacklogTI",
+    "client_id": "panel@lajoyaminingsac.onmicrosoft.com",
+    "client_secret": "@%pljm.2025.04718802.@%",
+    "document_library": "Facturas/LJC/2025"
+  },
+  "archivo_excel": "comprobantes.xlsx",
+  "archivo_base": "comprobante.pdf"
+}

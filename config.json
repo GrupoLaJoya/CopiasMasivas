@@ -1,0 +1,20 @@
+{
+  "sharepoint": {
+    "tenant": "lajoyaminingsac",
+    "site_url": "https://{tenant}.sharepoint.com/sites/BacklogTI",
+    "site_url_prod": "https://lajoyaminingsac.sharepoint.com/sites/ContabilidadFacturas",
+    "client_id": "panel@lajoyaminingsac.onmicrosoft.com",
+    "client_id_vendor": "sistemas@lajoyamining.com",
+    "client_secret_vendor": "CpaTI*2022",
+    "client_secret": "@%pljm.2025.04718802.@%",
+    "document_library": "Facturas/LJC/2025",
+    "document_library_prod": ["Facturas/LA JOYA COMERCIAL/REGISTRADAS/2025", "Facturas/BEDUINOS/REGISTRADAS/2025"],
+    "id_aplicacion": "7de960fa-8155-4bac-b00d-c0951c189d8f",
+    "id_directorio_inquilino": "5ada65a8-ed0d-481a-9d04-d64e939acb42",
+    "secret_access": "K8w8Q~ZAIOsBgFr6KR7ENV66pgy4JBMNYaqCWcfI",
+    "id_secret_access": "423ed856-40b5-40ba-a71c-611a545a88f4"
+  },
+  "archivo_excel": "comprobantes.xlsx",
+  "archivo_base": "comprobante.pdf"
+}
+

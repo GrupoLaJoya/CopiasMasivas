@@ -1,0 +1,18 @@
+{
+  "sharepoint": {
+    "tenant": "lajoyaminingsac",
+    "tenant_id": "5ada65a8-ed0d-481a-9d04-d64e939acb42",
+    "client_id": "7de960fa-8155-4bac-b00d-c0951c189d8f",
+    "client_secret": "e1_8Q~HFkNYXC2HfeYlf.tE~4S4W_bYLtaG3PaQC",
+    "site_name": "/sites/ContabilidadFacturas",
+    "site_domain": "lajoyaminingsac.sharepoint.com",
+    "document_library": "Facturas",
+    "document_library_prod": "Documentos",
+    "base_path": "LA JOYA COMERCIAL/REGISTRADAS/2025",
+    "lista_meses": [
+        "01. ENERO", "02. FEBRERO", "03. MARZO", "04. ABRIL", "05. MAYO", "06. JUNIO",
+        "07. JULIO 2025", "08. AGOSTO 2025", "09. SETIEMBRE 2025",
+        "OCTUBRE", "NOVIEMBRE", "DICIEMBRE"
+    ]
+  }
+}
