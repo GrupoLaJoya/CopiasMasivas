@@ -1,17 +1,19 @@
 @echo off
-rem --- CONFIGURA ESTO ---
-set "TARGET_DIR=C:\Users\User\PycharmProjects\Contabilidad"
-set "VENV_DIR=venv"
-set "CMD_TO_LOAD=python manage.py runserver"   rem <-- comando que quieres tener listo
+setlocal
 
-rem --- Copiar el comando al portapapeles (PowerShell) ---
-powershell -NoProfile -Command "Set-Clipboard -Value '%CMD_TO_LOAD%'"
+REM === CONFIGURA ESTO ===
+set "WORKDIR=%~dp0"
+REM set "WORKDIR=C:\Users\User\PycharmProjects\Contabilidad"
 
-rem --- Abrir cmd, ir a la carpeta y activar el virtualenv ---
-rem Usamos call para ejecutar el activate.bat y luego dejar la consola en el venv
-start "" cmd.exe /k "cd /d \"%TARGET_DIR%\" && if exist \"%VENV_DIR%\\Scripts\\activate.bat\" ( call \"%VENV_DIR%\\Scripts\\activate.bat\" ) else ( echo AVISO: no se encontro %VENV_DIR%\\Scripts\\activate.bat )"
+set "CMD_TO_RUN=python bulk_copy_sharepoint_graph.py --mode masiva --excel "masivo.xlsx" --same-file "masivo.pdf" --sheet "Hoja1""
 
-echo.
-echo El virtualenv (si existe) fue activado en %TARGET_DIR%.
-echo El comando fue copiado al portapapeles. Presiona Ctrl+V y Enter para ejecutarlo.
-pause
+REM Abrir una nueva ventana de CMD con todo listo
+start "VENV - %WORKDIR%" cmd /k ^
+ "cd /d ""%WORKDIR%"" ^
+  && if exist .venv\Scripts\activate.bat (call .venv\Scripts\activate.bat) else (echo No se encontro .venv\Scripts\activate.bat) ^
+  && doskey go=%CMD_TO_RUN% ^
+  && echo. ^
+  && echo Comando preparado: %CMD_TO_RUN% ^
+  && echo Alias creado: escribe go y presiona Enter ^
+  && echo (Tambien lo copie al portapapeles) ^
+  && echo %CMD_TO_RUN%|clip"
